@@ -9,13 +9,11 @@
     <version>7</version>
   </parent>
 
-  <groupId>com.segment.analytics.java</groupId>
+  <groupId>com.meergo.analytics.java</groupId>
   <artifactId>analytics-parent</artifactId>
   <version>3.5.2-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>Analytics for Java (Parent)</name>
-  <description>The hassle-free way to add analytics to your Android app.</description>
-  <url>https://github.com/segmentio/analytics-java</url>
 
   <modules>
     <module>analytics-core</module>
@@ -48,18 +46,6 @@
     <mockito.version>4.11.0</mockito.version>
     <assertj.version>3.24.2</assertj.version>
   </properties>
-
-  <scm>
-    <url>https://github.com/segmentio/analytics-java/</url>
-    <connection>scm:git:https://github.com/segmentio/analytics-java.git</connection>
-    <developerConnection>scm:git:git@github.com:segmentio/analytics-java.git</developerConnection>
-    <tag>HEAD</tag>
-  </scm>
-
-  <issueManagement>
-    <system>GitHub Issues</system>
-    <url>https://github.com/segmentio/analytics-java/issues</url>
-  </issueManagement>
 
   <licenses>
     <license>
@@ -184,6 +170,7 @@
           <artifactId>spotless-maven-plugin</artifactId>
           <version>${spotless.version}</version>
           <configuration>
+            <lineEndings>UNIX</lineEndings>
             <java>
               <googleJavaFormat>
                 <version>1.5</version>
@@ -258,7 +245,7 @@
           <archive>
             <manifest>
               <mainClass>
-                com.segment.analytics.Analytics
+                com.meergo.analytics.Analytics
               </mainClass>
             </manifest>
           </archive>

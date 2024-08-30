@@ -2,10 +2,10 @@ package cli
 
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
-import com.segment.analytics.Analytics
-import com.segment.analytics.Callback
-import com.segment.analytics.Log
-import com.segment.analytics.messages.*
+import com.meergo.analytics.Analytics
+import com.meergo.analytics.Callback
+import com.meergo.analytics.Log
+import com.meergo.analytics.messages.*
 import org.docopt.Docopt
 import java.util.concurrent.Phaser
 

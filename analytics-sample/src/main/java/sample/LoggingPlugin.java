@@ -1,10 +1,10 @@
 package sample;
 
-import com.segment.analytics.Analytics;
-import com.segment.analytics.Callback;
-import com.segment.analytics.Log;
-import com.segment.analytics.Plugin;
-import com.segment.analytics.messages.Message;
+import com.meergo.analytics.Analytics;
+import com.meergo.analytics.Callback;
+import com.meergo.analytics.Log;
+import com.meergo.analytics.Plugin;
+import com.meergo.analytics.messages.Message;
 
 /**
  * A {@link Plugin} implementation that redirects client logs to standard output and logs callback

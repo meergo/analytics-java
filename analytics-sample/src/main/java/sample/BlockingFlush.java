@@ -1,11 +1,11 @@
 package sample;
 
-import com.segment.analytics.Analytics;
-import com.segment.analytics.Callback;
-import com.segment.analytics.MessageTransformer;
-import com.segment.analytics.Plugin;
-import com.segment.analytics.messages.Message;
-import com.segment.analytics.messages.MessageBuilder;
+import com.meergo.analytics.Analytics;
+import com.meergo.analytics.Callback;
+import com.meergo.analytics.MessageTransformer;
+import com.meergo.analytics.Plugin;
+import com.meergo.analytics.messages.Message;
+import com.meergo.analytics.messages.MessageBuilder;
 import java.util.concurrent.Phaser;
 
 /**

@@ -1,7 +1,7 @@
 package sample;
 
-import com.segment.analytics.Analytics;
-import com.segment.analytics.messages.TrackMessage;
+import com.meergo.analytics.Analytics;
+import com.meergo.analytics.messages.TrackMessage;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.UUID;
@@ -10,12 +10,16 @@ import java.util.concurrent.atomic.AtomicInteger;
 import okhttp3.OkHttpClient;
 
 public class Main {
+  // Use your write key and endpoint.
+  private static final String WRITE_KEY = "";
+  private static final String ENDPOINT = "";
+
   public static void main(String... args) throws Exception {
     final BlockingFlush blockingFlush = BlockingFlush.create();
 
-    // https://segment.com/segment-engineering/sources/test-java/debugger
     final Analytics analytics =
-        Analytics.builder("xemyw6oe3n")
+        Analytics.builder(WRITE_KEY)
+            .endpoint(ENDPOINT)
             .plugin(blockingFlush.plugin())
             .plugin(new LoggingPlugin())
             .client(createClient())
