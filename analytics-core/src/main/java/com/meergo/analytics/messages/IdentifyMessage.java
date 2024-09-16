@@ -2,9 +2,9 @@ package com.meergo.analytics.messages;
 
 import com.google.auto.value.AutoValue;
 import com.meergo.analytics.gson.AutoGson;
+import jakarta.annotation.Nullable;
 import java.util.Date;
 import java.util.Map;
-import javax.annotation.Nullable;
 
 /**
  * The identify call ties a customer and their actions to a recognizable ID and traits like their

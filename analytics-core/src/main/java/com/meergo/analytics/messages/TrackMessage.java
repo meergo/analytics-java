@@ -2,9 +2,9 @@ package com.meergo.analytics.messages;
 
 import com.google.auto.value.AutoValue;
 import com.meergo.analytics.gson.AutoGson;
+import jakarta.annotation.Nullable;
 import java.util.Date;
 import java.util.Map;
-import javax.annotation.Nullable;
 
 /**
  * The track API call is how you record any actions your users perform, along with any properties

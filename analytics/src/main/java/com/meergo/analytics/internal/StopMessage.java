@@ -1,10 +1,10 @@
 package com.meergo.analytics.internal;
 
 import com.meergo.analytics.messages.Message;
+import jakarta.annotation.Nonnull;
+import jakarta.annotation.Nullable;
 import java.util.Date;
 import java.util.Map;
-import javax.annotation.Nonnull;
-import javax.annotation.Nullable;
 
 class StopMessage implements Message {
   static final StopMessage STOP = new StopMessage();

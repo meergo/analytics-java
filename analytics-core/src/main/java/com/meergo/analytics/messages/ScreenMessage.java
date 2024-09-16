@@ -2,9 +2,9 @@ package com.meergo.analytics.messages;
 
 import com.google.auto.value.AutoValue;
 import com.meergo.analytics.gson.AutoGson;
+import jakarta.annotation.Nullable;
 import java.util.Date;
 import java.util.Map;
-import javax.annotation.Nullable;
 
 /**
  * The screen call lets you record whenever a user sees a screen, along with any properties about
