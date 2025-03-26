@@ -126,7 +126,6 @@ public class Analytics {
   /** Fluent API for creating {@link Analytics} instances. */
   public static class Builder {
     private static final String DEFAULT_ENDPOINT = "https://api.example.com/v1/";
-    private static final String DEFAULT_PATH = "b";
     private static final String DEFAULT_USER_AGENT = "analytics-java/" + AnalyticsVersion.get();
     private static final int MESSAGE_QUEUE_MAX_BYTE_SIZE = 1024 * 500;
 
@@ -181,7 +180,7 @@ public class Analytics {
       if (endpoint == null || endpoint.trim().length() == 0) {
         throw new NullPointerException("endpoint cannot be null or empty.");
       }
-      this.endpoint = HttpUrl.parse(endpoint + DEFAULT_PATH);
+      this.endpoint = HttpUrl.parse(endpoint);
       return this;
     }
 
@@ -352,7 +351,7 @@ public class Analytics {
       Gson gson = gsonBuilder.create();
 
       if (endpoint == null) {
-        endpoint = HttpUrl.parse(DEFAULT_ENDPOINT + DEFAULT_PATH);
+        endpoint = HttpUrl.parse(DEFAULT_ENDPOINT);
       }
 
       if (client == null) {

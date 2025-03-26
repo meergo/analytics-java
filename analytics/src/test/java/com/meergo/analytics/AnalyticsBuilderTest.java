@@ -301,7 +301,7 @@ public class AnalyticsBuilderTest {
   @Test
   public void buildsCorrectEndpoint() {
     builder.endpoint("https://api.example.com/");
-    String expectedURL = "https://api.example.com/b";
+    String expectedURL = "https://api.example.com/";
     assertEquals(expectedURL, builder.endpoint.toString());
   }
 
