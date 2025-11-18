@@ -14,6 +14,8 @@
   <version>0.0.1</version>
   <packaging>pom</packaging>
   <name>Analytics for Java (Parent)</name>
+  <description>The Java SDK for analytics, by Meergo</description>
+  <url>https://github.com/meergo/analytics-java</url>
 
   <modules>
     <module>analytics-core</module>
@@ -45,6 +47,13 @@
     <mockito.version>4.11.0</mockito.version>
     <assertj.version>3.24.2</assertj.version>
   </properties>
+
+  <scm>
+    <url>https://github.com/meergo/analytics-java/</url>
+    <connection>scm:git:https://github.com/meergo/analytics-java.git</connection>
+    <developerConnection>scm:git:git@github.com:meergo/analytics-java.git</developerConnection>
+    <tag>HEAD</tag>
+  </scm>
 
   <licenses>
     <license>
