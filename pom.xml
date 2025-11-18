@@ -19,7 +19,6 @@
     <module>analytics-core</module>
     <module>analytics</module>
     <module>analytics-sample</module>
-    <module>analytics-cli</module>
     <module>analytics-spring-boot-starter</module>
   </modules>
 
