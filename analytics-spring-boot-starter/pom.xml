@@ -12,8 +12,6 @@
   <artifactId>analytics-spring-boot-starter</artifactId>
   <name>Spring Boot starter for Meergo Analytics for Java</name>
 
-  <properties />
-
   <dependencies>
     <dependency>
       <groupId>com.meergo.analytics.java</groupId>
