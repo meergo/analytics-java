@@ -21,4 +21,5 @@ jobs:
           cache: maven
 
       - id: spotless
-        run: mvn spotless:check animal-sniffer:check test verify
+        run: mvn spotless:check animal-sniffer:check test verify -Dgpg.skip=true
+
