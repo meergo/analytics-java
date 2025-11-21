@@ -56,6 +56,16 @@
     </license>
   </licenses>
 
+  <developers>
+    <developer>
+      <id>meergo</id>
+      <name>Meergo Team</name>
+      <email>maven@open2b.com</email>
+      <organization>Open2b</organization>
+      <organizationUrl>https://www.meergo.com/</organizationUrl>
+    </developer>
+  </developers>
+
   <dependencyManagement>
     <dependencies>
       <dependency>
