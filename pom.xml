@@ -229,6 +229,7 @@
           <publishingServerId>central</publishingServerId>
           <autoPublish>false</autoPublish>
           <waitUntil>published</waitUntil>
+          <excludeArtifacts>analytics-sample</excludeArtifacts>
         </configuration>
       </plugin>
 
