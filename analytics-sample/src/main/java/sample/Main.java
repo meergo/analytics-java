@@ -6,7 +6,6 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.UUID;
 import java.util.concurrent.TimeUnit;
-import java.util.concurrent.atomic.AtomicInteger;
 import okhttp3.OkHttpClient;
 
 public class Main {
@@ -28,18 +27,13 @@ public class Main {
     final String userId = System.getProperty("user.name");
     final String anonymousId = UUID.randomUUID().toString();
 
-    final AtomicInteger count = new AtomicInteger();
-    for (int i = 0; i < 10; i++) {
-      for (int j = 0; j < 10; j++) {
-        Map<String, Object> properties = new LinkedHashMap<>();
-        properties.put("count", count.incrementAndGet());
-        analytics.enqueue(
-            TrackMessage.builder("Java Test")
-                .properties(properties)
-                .anonymousId(anonymousId)
-                .userId(userId));
-      }
-    }
+    Map<String, Object> properties = new LinkedHashMap<>();
+    properties.put("foo", "bar");
+    analytics.enqueue(
+        TrackMessage.builder("Java Test")
+            .properties(properties)
+            .anonymousId(anonymousId)
+            .userId(userId));
 
     analytics.flush();
     blockingFlush.block();
