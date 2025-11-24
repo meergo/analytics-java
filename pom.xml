@@ -11,6 +11,21 @@
   <description>The Java SDK for analytics, by Meergo</description>
   <url>https://github.com/meergo/analytics-java</url>
 
+  <repositories>
+    <repository>
+      <id>central-portal-snapshots</id>
+      <name>Central Portal Snapshots</name>
+      <url>https://central.sonatype.com/repository/maven-snapshots/</url>
+      <snapshots>
+        <enabled>true</enabled>
+        <updatePolicy>always</updatePolicy>
+      </snapshots>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+    </repository>
+  </repositories>
+
   <modules>
     <module>analytics-core</module>
     <module>analytics</module>
